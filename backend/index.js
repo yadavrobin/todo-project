@@ -25,7 +25,6 @@ app.post('/todo',async function(req,res)
     })
 })
 app.get('/todos',async function(req,res){
-    console.log("in back")
     const todos=await todo.find({})
     res.json({
         todos
